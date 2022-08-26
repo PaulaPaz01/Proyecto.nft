@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFT</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
 </head>
 
 <body>
@@ -15,6 +16,10 @@
         <img src="./img-tp/img-NFT/logo.png" alt="logo">
 
         <nav class="navbar">
+            <label for="menu-toggle" class="menu-label">
+                <img src="./img-tp/img-NFT/menu.jpg" alt="icono menu" class="menu icon">
+            </label>
+            <input type="checkbox" name="" id="menu-toggle">
             <ul class="navbar-list">
                 <li>
                     <a href="#">Home</a>
@@ -32,7 +37,39 @@
                     <a href="#">Contactenos</a>
                 </li>
             </ul>
-            <img class="cart-icon" src="./img-tp/img-NFT/carrito.png" alt="carrito">
+
+            <label for="cart-toggle" class="cart-label">
+                <img class="cart-icon" src="./img-tp/img-NFT/carrito.png" alt="carrito">
+            </label>
+            <input type="checkbox" name="" id="cart-toggle">
+            <div class="cart">
+                <h2>Tus NFTs</h2>
+
+                <div class="cart-item">
+                    <img src="./img-tp/img-NFT/cart-img.png" alt="un producto">
+                    <div class="item-info">
+                        <h3 class="item-title">Messi</h3>
+                        <p class="item-bid">Current Bid</p>
+                        <span class="item-price">4.8 ETH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+
+                </div>
+
+                <span class="divider"></span>
+
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span>18.3 ETH</span>
+                </div>
+
+                <button class="btn-add">Comprar</button>
+
+            </div>
         </nav>
 
     </header>
